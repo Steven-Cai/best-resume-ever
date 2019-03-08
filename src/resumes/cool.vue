@@ -41,6 +41,22 @@
           </div>
         </div>
 
+	<div
+          v-if="person.awards"
+          class="section">
+          <div class="section-headline">
+            {{ lang.awards }}
+          </div>
+
+          <div class="section-content section-content--plain">
+            <a v-for="(award, index) in person.awards" :key="index"
+              class="section-content__item"
+              :href="award.url">
+             <span class="section-content__text"> {{ award.name }} </span>
+            </a>
+          </div>
+	</div>
+
         <div class="section">
           <div class="section-headline">
             {{ lang.contact }}
@@ -88,6 +104,14 @@
               :href="contactLinks.medium">
               <i class="section-link__icon fa fa-medium"></i>{{ person.contact.medium }}
             </a>
+
+            <a
+              v-if="person.contact.medium"
+              class="section-link"
+              :href="contactLinks.medium">
+              <i class="section-link__icon fa fa-medium"></i>{{ person.contact.medium }}
+            </a>
+
           </div>
         </div>
       </div>
@@ -144,18 +168,26 @@
             <i class="section-headline__icon material-icons">code</i>{{ lang.projects }}
           </div>
 
-          <div class="section-content-grid">
+          <div class="section-content">
             <a v-for="(project, index) in person.projects" :key="index"
-              class="section-content__item-grid"
+              class="section-content__item"
               :href="project.url">
               <span class="section-content__header"> {{ project.name }} </span>
               <span class="section-content__subheader">{{ project.platform }}</span>
-              <span class="section-content__text"> {{ project.description }} </span>
+
+              <div class="section-content section-content--plain">
+                <a v-for="(descriptions, index) in project.descriptions" :key="index"
+       	          class="section-content__item"
+                  :href="project.url">
+                  <span class="section-content__text"> - {{ descriptions.description }} </span>
+                </a>
+              </div>
+
             </a>
           </div>
         </div>
 
-        <div
+	<div
           v-if="person.contributions"
           class="section">
           <div class="section-headline">
@@ -225,7 +257,7 @@ a {
   width: @picture-size;
   border-radius: 50%;
   border: 5px solid @accent-color;
-  content: url('../../resume/id.jpg');
+  content: url('../../resume/steven.jpg');
   z-index: 2;
 }
 
@@ -352,6 +384,10 @@ a {
 
   &--plain {
     padding: 0;
+  }
+
+  &__item_index {
+    padding: 6;
   }
 }
 

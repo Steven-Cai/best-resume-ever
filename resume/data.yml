@@ -1,70 +1,88 @@
 /* #*/ export const PERSON = `
 name:
-  first: John
+  first: Steven
   middle:
-  last: Doe
-about: Hi, my name is John Doe. I"m just about the most boring type of person you could
-       possibly imagine. I like collecting leaves from the tree in my back yard and documenting
-       each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
-position: Software Developer
+  last: Cai
+about: My name is Steven Cai. I am a geek who has solid computer knowledge. I am always interested in learning about new technologies. Happy to accept the challenge and enjoy the sense of accomplishment.
+position: Software Engineer
 
 birth:
-  year: 1990
-  location: New York
+  year: 1989
+  location: Shanghai, China
 
 experience:
-- company: Company A
-  position: Developer
-  timeperiod: since January 2016
-  description: Programming and watching cute cat videos.
+- company: Honeywell Inc.
+  position: Senior software engineer/Technical specialist
+  timeperiod: June 2017 - Feburary 2019, Shanghai, China
+  description: Working with the BSP team members to complete all the device drivers, system components and packaging the entire system with YOCTO. Independently responsible for developing the company's coprocessor application library and designing the software architecture for MCU. Take the lead in solving difficult technical problems. At the same time, as a member of the technical expert group, I participated in innovative projects and audited IP.
   website: https://example.com
 
-- company: Company B
-  position: Frontend Developer
-  timeperiod: January 2015 - December 2015
-  description: Fulfillment of extremely important tasks.
-
-- company: Company C
-  position: Trainee
-  timeperiod: March 2014 - December 2014
-  description: Making coffee and baking cookies.
+- company: LongCircle Inc.
+  position: Software engineer
+  timeperiod: January 2012 - May 2017, Shanghai, China
+  description: Participated in the design and development of multiple products throughout the company. Provide module design, software implementation and documentation for our products. At the same time, as a core programmer, Quickly learn new technologies and apply them to products. Organize exhibitions, contact suppliers and customer technical support.
 
 education:
-- degree: Master of Arts
-  timeperiod: March 2012 - December 2013
-  description: Major in Hacking and Computer Penetration, University A, New York, USA.
-  website: https://example.com
-
 - degree: Bachelor of Science
-  timeperiod: March 2009 - December 2011
-  description: Major in Engineering, University B, Los Angeles, USA.
+  timeperiod: September 2008 - June 2012
+  description: Major in Information and Computing Science, University of South China.
 
 # skill level goes 0 to 100
 skills:
-- name: HTML5
+- name: C/C++
   level: 99
-- name: CSS3
+- name: Java
   level: 95
-- name: JavaScript
+- name: Linux
+  level: 95
+- name: Android
   level: 97
-- name: Node.js
+- name: Kernel
   level: 93
-- name: Angular 2
+- name: Driver
+  level: 93
+- name: FreeRTOS
   level: 60
-- name: TypeScript
+- name: Security
   level: 80
-- name: ES.Next
+- name: Bootloader
   level: 70
-- name: Docker
+- name: POS
   level: 99
-knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
-  (English and Klingon).
+knowledge: I have some experience in embedded software development on different platform. E.g. Nvidia, Qualcomm, I.MX, etc. Developed or ported many Linux device drivers. Have experience with Android HAL, Framework, APP, and so on. Familiar with various kernel modules. I also have done some projects based on Cortex-m.
 
 projects:
-- name: best-resume-ever
-  platform: Vue
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-  url: https://github.com/salomonelli/best-resume-ever
+- name: Global Residential Intrusion Platform
+  platform: IMX6, STM32, Linux, FreeRTOS
+  descriptions:
+  - description: Linux BSP development - drivers, FCT, etc.
+  - description: Communication library between MPU and MCU.
+  - description: Design software architecture on MCU.
+#  url: https://github.com/salomonelli/best-resume-ever
+- name: Vehicle AI platform
+  platform: Nvidia, Android, Qualcomm
+  descriptions:
+  - description: Idenpendently complete the design and development of all software and drivers on the prototype.
+- name: Smart Home Controler
+  platform: IMX6, Linux
+  descriptions:
+  - description: It works as a controler for Control4 smart home system.
+  - description: Works on drivers and application.
+- name: Etail 
+  platform: Nvidia, Android, Cortex-M3, FreeRTOS
+  descriptions:
+  - description: Porting Android. Independently develop drivers and HAL for WIFI, Camera, Touchscreen, 3G modem, NFC, FingerPrint, etc.
+  - description: Independently design and develop application on security chip.
+  - description: Improve the algorithm and optical construction of the special camera to work as a bar code scanner.
+  - description: Customize Android Framework and APP.
+
+awards:
+- name: Honeywell Recognition Platinum Award
+  date: 08.2017
+- name: Honeywell Recognition Sliver Award
+  date: 04.2018
+- name: Six Sigma Green Belt
+  date: 02.2018
 
 hobbies:
 - name: Video Games
@@ -75,18 +93,19 @@ hobbies:
   iconClass: fa fa-pencil
   url: https://example.com
 
-contributions:
-- name: best-resume-ever
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
-  url: https://github.com/salomonelli/best-resume-ever
+#contributions:
+#- name: best-resume-ever
+#  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
+#  url: https://github.com/salomonelli/best-resume-ever
 
 contact:
-  email: john.doe@email.com
-  phone: 0123 456789
-  street: 1234 Broadway
-  city: New York
-  website: johndoe.com
-  github: johnyD
+  email: stevencaiyaohua@gmail.com
+  phone: 0488 263 912
+  street: 268 Draper St, Parramatta Park, QLD, 4870
+  city: Cairns
+  # website: johndoe.com
+  github: Steven-Cai
+
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
 lang: en
 `
